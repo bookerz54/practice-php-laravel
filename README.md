@@ -4,6 +4,8 @@
 
 ## メモ
 
+### Laravel ホームが見えるまで
+
 composer を以下のようにしたとして。
 ```
 alias composer='docker run --rm -v $PWD:/app -v ${COMPOSER_HOME}:/tmp composer'
@@ -33,4 +35,10 @@ $ ./vendor/bin/sail up
 
 ```
 $ ./vendor/bin/sail down
+```
+
+### Controller 追加
+
+```
+$ ./vendor/bin/sail artisan make:controller My1stController
 ```
